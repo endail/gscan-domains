@@ -19,17 +19,10 @@ jobs:
         with:
           clean: false
 
-      - name: "Checkout GScan"
-        uses: actions/checkout@v2
-        with:
-          clean: false
-          repository: grayddq/GScan
-
       - run: |
 
-          ls ../..
-          ls ..
-          ls
+          git clone https://github.com/grayddq/GScan
+          cd GScan
 
           python3 ../run.py > ../gscan-list.domains
           cd ..
