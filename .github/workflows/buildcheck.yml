@@ -20,7 +20,7 @@ jobs:
       - name: "Checkout GScan"
         uses: actions/checkout@v2
         with:
-          name: grayddq/GScan
+          repository: grayddq/GScan
 
       - run: |
 
