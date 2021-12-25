@@ -24,6 +24,7 @@ jobs:
 
       - run: |
 
+          ls
           cd GScan
           python3 ../run.py > gscan-list.domains
 
